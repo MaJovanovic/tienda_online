@@ -70,6 +70,20 @@ header{
     grid-column:1/5;
     grid-row: 1/2;
     align-self:end;
+
+    animation-name: portada;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+@keyframes portada{
+    0%{
+        width: 20%;
+    }
+
+    100%{
+        width: 100%;
+    }
 }
 
 .ilustraciones{
@@ -97,6 +111,11 @@ header{
     grid-row:3/4;
 }
 
+.publi:hover{
+    height: 30%;
+    width: 30%;
+}
+
 #productosDestacados{
     padding-top: 65px;
     display: flex;
@@ -114,6 +133,10 @@ header{
     float: left;
     margin-top: 3%;
     margin-left: 3%;
+}
+
+input:focus{
+    width: 400px;
 }
 
 .contenedor_tienda{
@@ -138,6 +161,15 @@ header{
     border-radius: 40px;
     width: 100%;
     justify-self: center;
+}
+
+.prod:hover{
+    height: 110%;
+    width: 110%;
+}
+
+.prod{
+    transition: height 1s, width 1s;
 }
 
 .prod1{  
@@ -285,6 +317,16 @@ form{
 }
 
 
+.fotografia:hover{
+    height: 120%;
+    width: 120%;
+}
+
+.fotografia{
+
+    transition: height 2s, width 2s;   
+}
+
 
 
 
@@ -372,6 +414,7 @@ form{
         padding-top:0px;
 
     }
+
 
     #p1{
         display:none;
@@ -743,4 +786,3 @@ form{
         margin-top: 50%;
     }
 }
-asd
